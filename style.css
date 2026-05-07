@@ -1,0 +1,318 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+}
+:root{
+    --primary-color:#f51808f8;
+
+}
+.first-container{
+    background-color: rgb(231, 229, 229);
+    display: flex;
+    padding-top: 20px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.voitto{
+   margin-left: 10%;
+   margin-right: 10%;
+    
+}
+span{
+   font-family: "Caveat", cursive;
+    margin-bottom: 80px;
+    padding-top: 20px;
+    font-size: 2em;
+}
+.name{
+    background-color: white;
+    width:100%;
+    height:30px;
+    padding:10px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    border:none;
+   
+}
+
+.email{
+    background-color: white;
+    width:100%;
+    height:30px;
+    padding:10px;
+    margin-bottom: 20px;
+    border:none;
+}
+.sub{
+    width:60%;
+    height:30px;
+    background-color: var(--primary-color);
+    color:white;
+    padding-left: 20px;
+    text-align: left;
+    border: none;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.img{
+    margin-right: 10%;
+}
+.sec{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.foto{
+    display: flex;
+    overflow: hidden;
+}
+.rgb{
+    border-radius: 10px;
+    filter: grayscale(200%);
+    margin-right: 20px;
+    width:35%;
+    transition: all 0.3s ease-out;
+}
+.rgb:hover{
+    transform: scale(1.03);  
+}
+
+.btn{
+    background-color: var(--primary-color);
+    width:20%;
+    height: 30px;
+    border: none;
+    margin-top: 20px;
+    color:white;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+.third-container{
+    display: flex;
+    background-color: var(--primary-color);
+    height: 400px;
+}
+.thimg{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    width:100%;
+    height: 350px;
+    margin-bottom: 20px;
+    padding:10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.prize{
+    position: absolute;
+    width:50px;
+    height: 50px;
+    transform: translateY(-348px);
+    border-radius:50%;
+    left:82%;
+}
+
+.thcontent{
+    color: white;
+    margin-right: 10%;
+}
+.thbtn{
+    background-color: black;
+    color: white;
+    border: noness;
+    border:none;
+    height: 30px;
+}
+.rgba{
+     border-radius: 10px;
+    filter: grayscale(200%);
+    margin-right: 10px;
+    width:100%;
+    height:350px;
+    
+    transition: all 0.3s ease-out;
+}
+.rgba:hover{
+    transform: scale(1.02);  
+}
+@media (max-width: 780px){
+
+.first-container{
+    
+    flex-direction: row;
+    
+    position: relative;
+}
+
+.voitto{
+    padding: 20px;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.img{
+    text-align: center;
+    width:200px;
+    height: 200px;
+    position:absolute;
+    transform: translateX(500px);
+    top:300px;
+   
+}
+
+.img img{
+    width: 90%;
+    height: auto;
+}
+
+.name,
+.email,
+.sub{
+    width: 50%;
+    height: 40px;
+}
+
+.foto{
+    display: none;
+}
+.btn{
+    width: 60%;
+    height: 40px;
+}
+
+.third-container{
+    flex-direction: row;
+    height: 100%;
+    text-align: center;
+}
+
+.thimg{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-left: 10%;
+}
+.rgba{
+    width:100%;
+    height: auto;
+}
+.thcontent{
+    margin: 20px;
+    margin-right: 10%;
+}
+.thbtn{
+        width:80%;
+        margin-right: 10%;
+        height: 40px;
+
+.prize{
+    width: 30px;
+    height: 30px;
+    transform: translateY(-220px);
+    border-radius: 50%;
+    left: 120px;
+}
+}
+@media(max-width:575px){
+    .first-container{
+        flex-direction: column;
+        height: 900px;
+        width: 100%;
+        margin: 0%;
+    }
+    .vitto{
+        width:100%;
+        height: 50%;
+        margin: 0px;
+        position: relative;
+    }
+    .name{
+        width: 100%;
+        cursor: pointer;
+    }
+    .name:hover{
+        border:1px solid red;
+    }
+    .email{
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .email:hover{
+        border:1px solid var(--primary-color);
+    }
+    .sub{
+        text-align: center;
+        width:100%;
+        height: 40px;
+        margin-right: 10%;
+    }
+    .img{
+        width: 100%;
+        height: 500px;
+        position: absolute;
+         transform: translateY(250px);
+    }
+    .first-img{
+        width:100%;
+        height: 500px;
+        z-index: 1;
+       
+    }
+    .btn{
+        width:100%;
+        height: 40px;
+        margin-right: 10%;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: black;
+        color:white;
+    }
+    .third-container{
+    flex-direction: column;
+    height: 100%;
+    }
+    .thcontent{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .thimg{
+        width: 100%;
+        padding:0;
+        margin:0;
+    }
+    .rgba{
+        height: 50%;
+        width: 70%;
+        margin: 5%;
+        margin-top: 10%;
+        position: relative;
+    }
+    .prize{
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        transform: translateY(33Spx);
+        left: 300px;
+    }
+    .thbtn{
+        width:100%;
+        margin-right: 10%;
+        height: 40px;
+        cursor:pointer;
+    }S
+    .thbtn:hover{
+        background-color: white;
+        color:black;
+    }
+
+}
