@@ -40,6 +40,7 @@ body {
   font-size: 24px;
   font-weight: 400;
   margin-top: 8px;
+  text-align: justify;
 }
 .hero-label {
   font-size: 24px;
@@ -77,6 +78,8 @@ body {
   color: white;
   border-radius: 10px;
   border: none;
+  font-weight: 800px;
+  font-size: 24px;
 }
 .img {
   width: 55%;
@@ -84,54 +87,88 @@ body {
   /* background-color: red; */
   align-self: flex-end;
 }
+
 .sec {
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: 1125px;
+  margin: auto;
+}
+.sec h1{
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+.sec p{
+  text-align: justify;
+}
+.Para{
+    margin:37px 0 50px 0;
+    text-align: justify;
 }
 .foto {
   display: flex;
+}
+.foto-list{
   overflow: hidden;
+  width: 394px;
+  height: 377px;
+  margin-right: 20px;
+  border-radius: 10px;
 }
 .rgb {
-  border-radius: 10px;
-  filter: grayscale(200%);
-  margin-right: 20px;
-  width: 35%;
-  transition: all 0.3s ease-out;
+  width: 394px;
+    height: 377px;
+    transition: all 0.3s ease-out;
 }
 .rgb:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
 }
 
 .btn {
   background-color: var(--primary-color);
-  width: 20%;
-  height: 30px;
-  border: none;
-  margin-top: 20px;
   color: white;
-  font-weight: bold;
-  font-size: 1em;
-  margin-bottom: 30px;
+  width: 396px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  font-weight: 800px;
+  font-size: 26px;
+  cursor: pointer;
 }
-.third-container {
-  display: flex;
+.btn:hover{
+  transform: scale(1.02);
+}
+.third-section {
+  color: white;
   background-color: var(--primary-color);
-  height: 400px;
+}
+.third-container{
+  max-width: 1125px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 .thimg {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10px;
-  width: 100%;
-  height: 350px;
-  margin-bottom: 20px;
-  padding: 10px;
-  position: relative;
+  width: 533px;
+  height: 588px;
   overflow: hidden;
+  border-radius: 10px;
+  margin-top: 69px;
+  margin-bottom: 73px;
+  margin-right: 53px;
+}
+
+.rgba {
+  width: 533px;
+  height: 588px;
   transition: all 0.3s ease-out;
 }
 
+.rgba:hover {
+  transform: scale(1.1);
+}
+ 
+/*
 .prize {
   position: absolute;
   width: 50px;
@@ -139,36 +176,45 @@ body {
   transform: translateY(-348px);
   border-radius: 50%;
   left: 82%;
-}
+}*/
 
 .thcontent {
-  color: white;
-  margin-right: 10%;
+  margin-top: 76px;
+  
 }
+
+.thcontent h1{
+  width:641px;
+  height: 150px;
+
+  font-weight: 800px;
+}
+
+.thcontent p{
+  width: 641px;
+  height: 244px;
+  font-size: 24px;
+  font-weight: 500px;
+  text-align: justify;
+}
+
 .thbtn {
   background-color: black;
   color: white;
-  border: noness;
+  font-weight: 800px;
+  font-size: 26px;
   border: none;
-  height: 30px;
-}
-.rgba {
-  border-radius: 10px;
-  filter: grayscale(200%);
-  margin-right: 10px;
-  width: 100%;
-  height: 350px;
+  width: 413px;
+  height: 60px;
 
-  transition: all 0.3s ease-out;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
-.rgba:hover {
-  transform: scale(1.02);
-}
+
 
 @media (max-width: 992px) {
   .hero-container {
     /* flex-direction: row;
-
     position: relative; */
     padding: 0 20px;
   }
@@ -180,13 +226,17 @@ body {
     margin-right: 10%; */
   }
 
+  .hero-section{
+    width:100%;
+  }
+
   .img {
     text-align: center;
     width: 200px;
     height: 200px;
     position: absolute;
     transform: translateX(500px);
-    top: 300px;
+    top: 400px;
   }
 
   .img img {
@@ -207,26 +257,40 @@ body {
   .btn {
     width: 60%;
     height: 40px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  
+  .sec-container{
+    max-width: 992px;
+    margin: auto;
+    padding: 0 20px;
   }
 
   .third-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
     flex-direction: row;
     height: 100%;
     text-align: center;
   }
 
+
+
   .thimg {
+    max-width:300px;
+   /* margin-left: 10%;
+    position: absolute;
+    transform:translateX(10px);
+  }
+  /*.rgba {
     width: 100%;
     height: auto;
-    margin: auto;
-    margin-left: 10%;
-  }
-  .rgba {
-    width: 100%;
-    height: auto;
-  }
+  }*/
   .thcontent {
-    margin: 20px;
+    max-width: 300px;
+   /* margin: 20px;
     margin-right: 10%;
   }
   .thbtn {
@@ -234,20 +298,19 @@ body {
     margin-right: 10%;
     height: 40px;
 
-    .prize {
+    /*.prize {
       width: 30px;
       height: 30px;
       transform: translateY(-220px);
       border-radius: 50%;
       left: 120px;
-    }
+    }*/
   }
   @media (max-width: 575px) {
-    .first-container {
+    .hero-container {
       flex-direction: column;
-      height: 900px;
-      width: 100%;
-      margin: 0%;
+      max-width: 575px;
+      margin: auto;
     }
     .vitto {
       width: 100%;
@@ -334,5 +397,5 @@ body {
       background-color: white;
       color: black;
     }
-
+  }
 }
